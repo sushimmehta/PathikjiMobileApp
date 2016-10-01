@@ -11,12 +11,20 @@ namespace PathikjiMobileApp
         {
             InitializeComponent();
 
-            NavigationService.NavigateAsync("MainPage?title=Hello%20from%20Xamarin.Forms");
+            NavigationService.NavigateAsync("MainTabbedPage");
+            
         }
 
         protected override void RegisterTypes()
         {
-            Container.RegisterTypeForNavigation<MainPage>();
+            Container.RegisterTypeForNavigation<MainTabbedPage>();
+            Container.RegisterTypeForNavigation<AboutPage>();
+            Container.RegisterTypeForNavigation<AudioMasterDetailPage>();
+            Container.RegisterTypeForNavigation<AudioMasterPage>();
+            Container.RegisterTypeForNavigation<AudioDetailPage>();
+            Container.RegisterTypeForNavigation<VideoMasterDetailpage>();
+            Container.RegisterTypeForNavigation<VideoMasterPage>();
+            Container.RegisterTypeForNavigation<VideoDetailPage>();
         }
     }
 }

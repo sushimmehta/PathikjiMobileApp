@@ -7,6 +7,8 @@ namespace PathikjiMobileApp.Views
         public AudioMasterDetailPage()
         {
             InitializeComponent();
+            Master = new AudioMasterPage();
+            Detail = new AudioDetailPage();
         }
     }
 }

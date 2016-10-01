@@ -7,6 +7,10 @@ namespace PathikjiMobileApp.Views
         public MainTabbedPage()
         {
             InitializeComponent();
+
+            Children.Add(new AboutPage());
+            Children.Add(new VideoMasterDetailpage());
+            Children.Add(new AudioMasterDetailPage());
         }
     }
 }

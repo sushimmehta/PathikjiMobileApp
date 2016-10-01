@@ -7,6 +7,8 @@ namespace PathikjiMobileApp.Views
         public VideoMasterDetailpage()
         {
             InitializeComponent();
+            Master = new VideoMasterPage();
+            Detail = new VideoDetailPage();
         }
     }
 }
