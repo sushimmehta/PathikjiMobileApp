@@ -6,5 +6,7 @@
              x:Class="PathikjiMobileApp.Views.VideoMasterPage"
              Title="Videos"
              >
-
+  <StackLayout>
+    <Label Text="Hi in Master!"></Label>
+  </StackLayout>
 </ContentPage>
