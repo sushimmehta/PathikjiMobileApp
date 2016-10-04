@@ -6,5 +6,21 @@
              x:Class="PathikjiMobileApp.Views.AudioDetailPage"
              Title="Audio List"
              >
-
+  <StackLayout>
+    <ListView x:Name="AudioListView" ItemTapped="OnTapped">
+      <ListView.ItemTemplate>
+        <DataTemplate>
+          <ViewCell>
+            <ViewCell.View>
+              <StackLayout Orientation="Horizontal" >
+                <StackLayout>
+                  <Label Text="{Binding Name}" FontSize="Medium" Margin="20, 10"> </Label>
+                </StackLayout>
+              </StackLayout>
+            </ViewCell.View>
+          </ViewCell>
+        </DataTemplate>
+      </ListView.ItemTemplate>
+    </ListView>
+  </StackLayout>
 </ContentPage>

@@ -7,8 +7,8 @@ namespace PathikjiMobileApp.Views
 {
     public partial class VideoDetailPage : ContentPage
     {
-        public int tmpVar;
         public List<Video> Videos { get; set; }
+
         public VideoDetailPage()
         {
             InitializeComponent();
