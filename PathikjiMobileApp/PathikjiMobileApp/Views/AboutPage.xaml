@@ -6,5 +6,25 @@
              x:Class="PathikjiMobileApp.Views.AboutPage"
              Title="About"
              >
+  <ScrollView>
+    <StackLayout Spacing="0" BackgroundColor="White">
+      <ContentView Padding="20">
+        <Label
+				LineBreakMode="WordWrap"
+				Text="{Binding AboutHeading}" 
+        FontSize = "Large"
+        HorizontalOptions = "LayoutOptions.Center" />
+      </ContentView>
+      <Image
+			Source="about_background.png"
+			Aspect="AspectFit" />
+      <ContentView Padding="20">
+        <Label
+				LineBreakMode="WordWrap"
+				Text="{Binding AboutText}" 
+        FontSize ="Medium" />
+      </ContentView>
 
+    </StackLayout>
+  </ScrollView>
 </ContentPage>
