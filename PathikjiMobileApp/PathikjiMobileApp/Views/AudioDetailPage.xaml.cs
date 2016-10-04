@@ -32,7 +32,7 @@ namespace PathikjiMobileApp.Views
             {
                 Audio tappedAudio = (Audio)e.Item;
                 Uri tappedUri = new Uri(tappedAudio.URL);
-                //Device.OpenUri(tappedUri);
+                Device.OpenUri(tappedUri);
             }
             catch (Exception)
             {
