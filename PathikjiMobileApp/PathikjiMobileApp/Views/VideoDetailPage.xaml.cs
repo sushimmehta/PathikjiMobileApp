@@ -32,7 +32,7 @@ namespace PathikjiMobileApp.Views
             {
                 Video tappedVideo = (Video)e.Item;
                 Uri tappedUri = new Uri(tappedVideo.URL);
-                Device.OpenUri(tappedUri);
+                //Device.OpenUri(tappedUri);
             }
             catch (Exception)
             {
