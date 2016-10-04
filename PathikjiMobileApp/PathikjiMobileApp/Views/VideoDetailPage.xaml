@@ -7,7 +7,7 @@
              Title="Video List"
              >
   <StackLayout>
-    <ListView x:Name="NewListView">
+    <ListView x:Name="NewListView" ItemTapped="OnTapped">
       <ListView.ItemTemplate>
         <DataTemplate>
           <ViewCell>

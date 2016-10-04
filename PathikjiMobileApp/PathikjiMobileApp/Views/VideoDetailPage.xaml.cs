@@ -1,4 +1,5 @@
 ﻿using PathikjiMobileApp.Model;
+using System;
 using System.Collections.Generic;
 using Xamarin.Forms;
 
@@ -6,6 +7,7 @@ namespace PathikjiMobileApp.Views
 {
     public partial class VideoDetailPage : ContentPage
     {
+        public int tmpVar;
         public List<Video> Videos { get; set; }
         public VideoDetailPage()
         {
@@ -22,6 +24,21 @@ namespace PathikjiMobileApp.Views
             Videos.Add(new Video("Video8", "https://www.youtube.com/watch?v=p5PHBbZYjec"));
 
             NewListView.ItemsSource = Videos;
+        }
+
+        public void OnTapped (object sender, ItemTappedEventArgs e)
+        {
+            try
+            {
+                Video tappedVideo = (Video)e.Item;
+                Uri tappedUri = new Uri(tappedVideo.URL);
+                Device.OpenUri(tappedUri);
+            }
+            catch (Exception)
+            {
+                //throw;
+            }
+
         }
     }
 }
