@@ -5,6 +5,7 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              x:Class="PathikjiMobileApp.Views.AboutPage"
              Title="About"
+             Icon="about.png"
              >
   <ScrollView>
     <StackLayout Spacing="0" BackgroundColor="White">

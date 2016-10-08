@@ -5,6 +5,7 @@
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="PathikjiMobileApp.Views.VideoMasterDetailpage"
                   Title="Video"
+                  Icon="video.png"
                   >
 
 </MasterDetailPage>

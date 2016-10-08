@@ -6,6 +6,9 @@
              x:Class="PathikjiMobileApp.Views.VideoDetailPage"
              Title="Video List"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
   <StackLayout>
     <ListView x:Name="NewListView" ItemTapped="OnTapped">
       <ListView.ItemTemplate>

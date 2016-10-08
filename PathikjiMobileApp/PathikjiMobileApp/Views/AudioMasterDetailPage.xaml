@@ -5,6 +5,7 @@
                   prism:ViewModelLocator.AutowireViewModel="True"
                   x:Class="PathikjiMobileApp.Views.AudioMasterDetailPage"
                   Title="Audio"
+                  Icon="audio.png"
                   >
 
 </MasterDetailPage>
