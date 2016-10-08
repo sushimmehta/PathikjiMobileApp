@@ -7,6 +7,9 @@
              Title="About"
              Icon="about.png"
              >
+  <ContentPage.Padding>
+    <OnPlatform x:TypeArguments="Thickness" iOS="0, 20, 0, 0" />
+  </ContentPage.Padding>
   <ScrollView>
     <StackLayout Spacing="0" BackgroundColor="White">
       <ContentView Padding="20">
